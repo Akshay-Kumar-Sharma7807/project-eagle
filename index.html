@@ -128,64 +128,29 @@
           </div>
         </div>
       </div>
-
-
-      <!-- <div class="projects-container">
-        <div class="card" data-sal="slide-right">
-          <div class="card-img">
-            <img src="https://github.com/Akshay-Kumar-Sharma7807/images/blob/main/519_295775_tech.hero.jpg?raw=true"
-              alt="image" />
-          </div>
-          <h3 class="card-title">Music App</h3>
-          <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, vitae.</p>
-        </div>
-        <div class="card" data-sal="slide-up">
-          <div class="card-img">
-            <img src="https://github.com/Akshay-Kumar-Sharma7807/images/blob/main/519_295775_tech.hero.jpg?raw=true"
-              alt="image" />
-          </div>
-          <h3 class="card-title">Music App</h3>
-          <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, vitae.</p>
-        </div>
-        <div class="card" data-sal="slide-left">
-          <div class="card-img">
-            <img src="https://github.com/Akshay-Kumar-Sharma7807/images/blob/main/519_295775_tech.hero.jpg?raw=true"
-              alt="image" />
-          </div>
-          <h3 class="card-title">Music App</h3>
-          <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, vitae.</p>
-        </div>
-        <div class="card" data-sal="slide-right">
-          <div class="card-img">
-            <img src="https://github.com/Akshay-Kumar-Sharma7807/images/blob/main/519_295775_tech.hero.jpg?raw=true"
-              alt="image" />
-          </div>
-          <h3 class="card-title">Music App</h3>
-          <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, vitae.</p>
-        </div>
-        <div class="card" data-sal="slide-up">
-          <div class="card-img">
-            <img src="https://github.com/Akshay-Kumar-Sharma7807/images/blob/main/519_295775_tech.hero.jpg?raw=true"
-              alt="image" />
-          </div>
-          <h3 class="card-title">Music App</h3>
-          <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, vitae.</p>
-        </div>
-        <div class="card" data-sal="slide-left">
-          <div class="card-img">
-            <img src="https://github.com/Akshay-Kumar-Sharma7807/images/blob/main/519_295775_tech.hero.jpg?raw=true"
-              alt="image" />
-          </div>
-          <h3 class="card-title">Music App</h3>
-          <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, vitae.</p>
-        </div> -->
-      <!-- </div> -->
     </section>
     <section class="contact">
 
+      <h2 data-sal="slide-left" class="title">Contact me</h2>
+
+      <div class="social-contacts">
+        <a href="http://www.github.com/Akshay-Kumar-Sharma7807" target="_blank" rel="noopener noreferrer">
+          <img src="./logos/github.svg" alt="Github" />
+        </a>
+      </div>
+
       <form onsubmit="console.log('hello')">
-        <label for="name">Name: </label><input type="text" name="name" id="name">
+        <div
+          style="margin: 1rem 0;font-weight: 500;font-size: 1.4rem; border-bottom: 2px solid white; width: 100%; text-align: center;">
+          OR</div>
+        <div class="inputs">
+          <input placeholder="Name" type="text" name="name" id="name">
+          <input placeholder="Email" type="email" name="email" id="email">
+        </div>
+        <textarea name="message" id="message" placeholder="Enter your Message" rows="5"></textarea>
+        <button type="submit">Submit</button>
       </form>
+
     </section>
   </main>
   <script src="./sal.js"></script>

@@ -33,6 +33,24 @@ main {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  max-width: 1280px;
+}
+/* Common styles and utilities */
+
+section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.6rem;
+  width: 100%;
+  padding: 2rem 2rem;
+  overflow: hidden;
+}
+
+.title {
+  margin: 1rem auto;
+  text-align: center;
+  /* width: 100%; */
 }
 
 .color-primary {
@@ -109,6 +127,8 @@ button:hover {
   border: none;
 }
 
+/* ================= Navigation Styles ========================== */
+
 nav {
   padding: 1rem;
   background: rgba(255, 255, 255, 0.7);
@@ -152,30 +172,8 @@ nav .links {
 }
 
 
-/* Common styles and utilities */
 
-main {
-  /* margin-top: 4rem; */
-  max-width: 1280px;
-}
-
-section {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  gap: 0.6rem;
-  width: 100%;
-  padding: 2rem 2rem;
-  overflow: hidden;
-}
-
-.title {
-  margin: 1rem auto;
-  text-align: center;
-  /* width: 100%; */
-}
-
-/* home styles */
+/* ======================== home styles ================================ */
 
 .hero {
   display: flex;
@@ -215,7 +213,7 @@ section {
   gap: 0.8rem;
 }
 
-/* Skills styles */
+/* ======================== Skills styles =========================== */
 
 #skills {
   display: flex;
@@ -251,11 +249,8 @@ section {
   border-radius: 2px;
 } */
 
-/* projects style */
+/* ======================= projects style ========================= */
 
-#projects {
-  /* background-color: var(--primary); */
-}
 
 .projects-container {
   display: grid;
@@ -294,7 +289,75 @@ section {
   object-fit: cover;
 }
 
-/* block text reveal animation */
+/* ======================== Contact Styles ============================ */
+.contact {
+  background: var(--gradient);
+  color: white;
+}
+.contact form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form .inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+input, textarea {
+  border: none;
+  outline: none;
+  color: var(--color);
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  width: clamp(200px, 50vw, 500px);
+  font-weight: 500;
+  color: var(color);
+  position: relative;
+  border: 2px solid white;
+  transition: 0.2s ease-in-out;
+}
+
+input:focus, textarea:focus {
+  border-color: var(--primary-light);
+  box-shadow: 0 0 5px rgba(0, 217, 255, 0.858), 0 0 15px rgba(0, 217, 255, 0.699);
+}
+
+.social-contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.social-contacts a {
+  padding: 5px;
+  background: var(--primary-transparent);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-contacts img {
+  width: 30px;
+  height: 30px;
+}
+
+/* input:hover:before {
+  width: 100%;
+
+} */
+
+
+/* ============================= block text reveal animation ====================== */
 
 
 h1 span {
